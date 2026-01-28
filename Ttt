@@ -1,0 +1,19 @@
+decoration {
+    # Прозрачность активного окна (0.0 - 1.0)
+    active_opacity = 0.9
+    
+    # Прозрачность окон на заднем плане
+    inactive_opacity = 0.8
+
+    # Прозрачность полноэкранных окон
+    fullscreen_opacity = 1.0
+
+    # ОБЯЗАТЕЛЬНО включите размытие (blur), иначе будет плохо видно текст
+    blur {
+        enabled = true
+        size = 5
+        passes = 2
+        new_optimizations = true
+        ignore_opacity = true # Делает размытие стабильным под прозрачными окнами
+    }
+}
